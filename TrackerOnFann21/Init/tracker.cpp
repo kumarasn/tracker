@@ -82,9 +82,9 @@ int main() {
 		Xcoord = net->getXcoord();
 		Ycoord = net->getYcoord();
 
-		//filterHandler->runFIRfilter(Xcoord,Ycoord,XcoordFIR,YcoordFIR);
+		filterHandler->runFIRfilter(Xcoord,Ycoord,XcoordFIR,YcoordFIR);
 
-		filterHandler->runAverageSmoothing(Xcoord,Ycoord,XcoordFIR,YcoordFIR);
+		//filterHandler->runAverageSmoothing(Xcoord,Ycoord,XcoordFIR,YcoordFIR);
 
 		util->putMarker(currentFrame,XcoordFIR*4,YcoordFIR*4);
 
