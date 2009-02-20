@@ -32,7 +32,17 @@
 
 #include <windows.h>
 
-//#include "CoordBuffer.h"
+#include "time.h"
+
+
+void start();
+void end();
+void saveInfo();
+
+
+clock_t t_ini;
+clock_t t_fin;
+double secs;
 
 int main() {
 
@@ -129,6 +139,8 @@ int main() {
 	 IplImage* filteredImage;
 
 
+	 ofstream out("C:\\TesisTest\\L.txt",ofstream::app);
+
 
 	while ( cam->stillTracking() ){
 
@@ -150,6 +162,13 @@ int main() {
 		util->putMarker(currentFrame,XcoordFIR*4,YcoordFIR*4);
 
 		SetCursorPos(XcoordFIR * x_val ,(cy - YcoordFIR * y_val) );
+
+		end();
+
+		saveInfo(cx - XcoordFIR * x_val,cy - YcoordFIR * y_val);
+
+
+
 
 	//	cam->showFrame(MainWindow,currentFrame);
 
@@ -188,4 +207,42 @@ int main() {
 	logger->closeLogger();
 
 	return 0;
+}
+
+
+void start(){
+
+	t_ini = clock();
+
+}
+
+/*
+ * This method saves on secs the difference beetween this time and the first time saved
+ */
+
+void end(){
+
+	t_fin = clock();
+
+	secs = (double)(t_fin - t_ini) / CLOCKS_PER_SEC;
+
+}
+
+void startFile(){
+
+
+}
+
+void saveInfo(int xval,int yval){
+
+
+
+			out << (xval);
+			out << ",";
+			out << (yval);
+			out << ",";
+			out << secs;
+			out << "\n";
+
+
 }
