@@ -18,8 +18,6 @@
 
 #include "..\Utils\ImageUtilities.h"
 
-#include "..\Utils\SystemInfo.h"
-
 #include "..\ConfigurationHandler\ConfigHandler.h"
 
 #include "..\stabilizers\LightStabilizer.h"
@@ -34,18 +32,14 @@
 
 #include "time.h"
 
-
 void start();
 void end();
-void saveInfo();
-
 
 clock_t t_ini;
 clock_t t_fin;
 double secs;
 
 int main() {
-
 
 	LogHandler               *logger = new LogHandler();
 
@@ -55,7 +49,7 @@ int main() {
 	LightStabilizer *lightStabilizer = new LightStabilizer(logger);
 	FilterHandler     *filterHandler = new FilterHandler(logger);
 	ImageUtilities             *util = new ImageUtilities();
-	SystemInfo              *sysInfo = new SystemInfo(logger);
+	//SystemInfo              *sysInfo = new SystemInfo(logger);
 
 	logger->initLogger();
 
@@ -87,7 +81,7 @@ int main() {
 	}
 
 
-	sysInfo->init();
+	//sysInfo->init();
 
 
 	/*/
@@ -121,6 +115,9 @@ int main() {
 
 	std::string MainWindow = cam->getFirstWindow();
 
+	std::string NetWindow = cam->getThirdWindow();
+
+
 	int Xcoord,Ycoord,XcoordFIR,YcoordFIR;
 
 
@@ -130,17 +127,17 @@ int main() {
 
 	 int x_val, y_val,cx,cy;
 
-	 sysInfo->getSystemRatio(x_val,y_val);
+	 //sysInfo->getSystemRatio(x_val,y_val);
 
-	 sysInfo->getSystemResolution(cx,cy);
+	 //sysInfo->getSystemResolution(cx,cy);
 
 	 IplImage* currentFrame;
 
 	 IplImage* filteredImage;
 
+	 ofstream out("C:\\TesisTest\\testtest.txt",ofstream::app);
 
-	 ofstream out("C:\\TesisTest\\L.txt",ofstream::app);
-
+	 start();
 
 	while ( cam->stillTracking() ){
 
@@ -161,16 +158,22 @@ int main() {
 
 		util->putMarker(currentFrame,XcoordFIR*4,YcoordFIR*4);
 
-		SetCursorPos(XcoordFIR * x_val ,(cy - YcoordFIR * y_val) );
+		//ESA ES LA SALIDA!!! hay que sacar el "cy - "
+
+		SetCursorPos((cx - XcoordFIR * x_val) ,(cy - YcoordFIR * y_val) );
+
 
 		end();
+		out << (cx - XcoordFIR * x_val);
+		out << ",";
+		out << (cy - YcoordFIR * y_val);
+		out << ",";
+		out << secs;
+		out << "\n";
 
-		saveInfo(cx - XcoordFIR * x_val,cy - YcoordFIR * y_val);
 
-
-
-
-	//	cam->showFrame(MainWindow,currentFrame);
+		cam->showFrame(NetWindow,filteredImage);
+		cam->showFrame(MainWindow,currentFrame);
 
 		//Static Gesture Recognition through skin pixel count
 
@@ -199,6 +202,7 @@ int main() {
 
 	}
 
+	out.close();
 
 	cam->stopCamDevice();
 
@@ -208,7 +212,6 @@ int main() {
 
 	return 0;
 }
-
 
 void start(){
 
@@ -225,24 +228,5 @@ void end(){
 	t_fin = clock();
 
 	secs = (double)(t_fin - t_ini) / CLOCKS_PER_SEC;
-
-}
-
-void startFile(){
-
-
-}
-
-void saveInfo(int xval,int yval){
-
-
-
-			out << (xval);
-			out << ",";
-			out << (yval);
-			out << ",";
-			out << secs;
-			out << "\n";
-
 
 }
