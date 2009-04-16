@@ -31,6 +31,10 @@ public:
 
 	IplImage* retrieveFrame();
 
+    std::string getThirdWindow() const{return thirdWindow;}
+
+    void setThirdWindow(std::string thirdWindow){this->thirdWindow = thirdWindow;}
+
     std::string getFirstWindow() const{return firstWindow;}
 
     void setFirstWindow(std::string firstWindow){this->firstWindow = firstWindow;}
@@ -50,6 +54,8 @@ private:
 	std::string firstWindow;
 
 	std::string secondWindow;
+
+	std::string thirdWindow;
 
 	LogHandler* logger;
 

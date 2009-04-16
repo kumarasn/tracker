@@ -3,7 +3,7 @@
 	<name>Tracker</name>
 	<comment></comment>
 	<projects>
-		<project>Common</project>
+		<project>CommonProject</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -32,7 +32,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/lib22/MinGW GCC}</value>
+					<value>${workspace_loc:/Tracker/MinGW GCC}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>

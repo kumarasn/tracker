@@ -17,20 +17,51 @@
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
 <configuration artifactName="Tracker" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.mingw.base.1086856606" name="MinGW GCC" parent="org.eclipse.cdt.build.core.emptycfg">
 <folderInfo id="cdt.managedbuild.toolchain.gnu.mingw.base.1086856606.1076236341" name="/" resourcePath="">
-<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.1655086517" name="cdt.managedbuild.toolchain.gnu.mingw.base" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
+<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.1655086517" name="cdt.managedbuild.toolchain.gnu.mingw.base" nonInternalBuilderId="org.eclipse.cdt.build.core.settings.default.builder" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
 <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.111075810" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
-<builder buildPath="${workspace_loc:/lib22/MinGW GCC}" id="cdt.managedbuild.toolchain.gnu.mingw.base.1086856606.1442486075" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+<builder buildPath="${workspace_loc:/Tracker/MinGW GCC}" id="org.eclipse.cdt.build.core.settings.default.builder.2096779417" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 <tool id="cdt.managedbuild.tool.gnu.assembler.mingw.base.2129949995" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
+<option id="gnu.both.asm.option.include.paths.1890858560" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;C:\fann-2.0.0\src\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\MinGW\include\c++\3.4.5\backward&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cv\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cvaux\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\otherlibs\highgui&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cxcore\include&quot;"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1572843161" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1223173889" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1678207264" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
 <option id="gnu.cpp.compiler.option.include.paths.897746848" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;C:\fann-2.0.0\src\include&quot;"/>
-<listOptionValue builtIn="false" value="&quot;C:\Archivos de programa\OpenCV\cxcore\include&quot;"/>
-<listOptionValue builtIn="false" value="&quot;C:\Archivos de programa\OpenCV\cv\include&quot;"/>
-<listOptionValue builtIn="false" value="&quot;C:\Archivos de programa\OpenCV\cvaux\include&quot;"/>
-<listOptionValue builtIn="false" value="&quot;C:\Archivos de programa\OpenCV\otherlibs\highgui&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\MinGW\include\c++\3.4.5\backward&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\ActiveQt&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\Phonon&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\Qt&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\Qt3Support&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtAssistant&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtCore&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtDBus&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtDesigner&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtGui&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtHelp&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtNetwork&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtOpenGL&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtScript&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtScriptTools&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtSql&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtSvg&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtTest&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtUiTools&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtWebKit&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtXml&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\include\QtXmlPatterns&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\otherlibs\highgui&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cvaux\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cv\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\cxcore\include&quot;"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.969514453" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 </tool>
@@ -40,11 +71,15 @@
 <tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.218398722" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base"/>
 <tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.246676822" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base">
 <option id="gnu.cpp.link.option.paths.487553166" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-<listOptionValue builtIn="false" value="&quot;C:\Archivos de programa\OpenCV\lib&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TrackerOnFann21/lib}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Tracker/lib}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Qt\4.5.0\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\OpenCV\lib&quot;"/>
 </option>
 <option id="gnu.cpp.link.option.libs.1191029813" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 <listOptionValue builtIn="false" value="Fann20"/>
+<listOptionValue builtIn="false" value="qtmaind"/>
+<listOptionValue builtIn="false" value="QtGuid4"/>
+<listOptionValue builtIn="false" value="QtCored4"/>
 <listOptionValue builtIn="false" value="cv"/>
 <listOptionValue builtIn="false" value="highgui"/>
 <listOptionValue builtIn="false" value="cxcore"/>
@@ -58,9 +93,15 @@
 </folderInfo>
 </configuration>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+<externalSettings containerId="CommonProject;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+</storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+
+
+
+
 
 
 <storageModule moduleId="scannerConfiguration">
@@ -145,6 +186,26 @@
 <parser enabled="true"/>
 </scannerInfoProvider>
 </profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlc" useDefault="true"/>
+<parser enabled="false"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlC" useDefault="true"/>
+<parser enabled="false"/>
+</scannerInfoProvider>
+</profile>
 <scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1086856606;cdt.managedbuild.toolchain.gnu.mingw.base.1086856606.1076236341;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1678207264;cdt.managedbuild.tool.gnu.cpp.compiler.input.969514453">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
 <profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
@@ -225,6 +286,26 @@
 <scannerInfoProvider id="specsFile">
 <runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
 <parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlc" useDefault="true"/>
+<parser enabled="false"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlC" useDefault="true"/>
+<parser enabled="false"/>
 </scannerInfoProvider>
 </profile>
 </scannerConfigBuildInfo>
@@ -308,6 +389,26 @@
 <scannerInfoProvider id="specsFile">
 <runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
 <parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlc" useDefault="true"/>
+<parser enabled="false"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.xlc.core.XLCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="false" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -v ${plugin_state_location}/${specs_file}" command="${XL_compilerRoot}/xlC" useDefault="true"/>
+<parser enabled="false"/>
 </scannerInfoProvider>
 </profile>
 </scannerConfigBuildInfo>
