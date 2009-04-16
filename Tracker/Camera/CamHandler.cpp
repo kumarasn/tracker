@@ -16,6 +16,8 @@ CamHandler::CamHandler(LogHandler* logger) {
 
 	secondWindow = "Static Gesture Recognition";
 
+	thirdWindow = "Net Input";
+
 	still_tracking = false;
 
 
@@ -59,6 +61,9 @@ bool CamHandler::initCamDevice()
 
      cvNamedWindow( firstWindow.c_str(), CV_WINDOW_AUTOSIZE );
      cvNamedWindow( secondWindow.c_str(), CV_WINDOW_AUTOSIZE );
+
+   //  if ( thirdWindow != 0)
+    	 cvNamedWindow( thirdWindow.c_str(), CV_WINDOW_AUTOSIZE );
 
      logger->addEntry(componentName,"Camera started succefully");
 
