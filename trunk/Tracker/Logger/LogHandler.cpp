@@ -8,7 +8,8 @@
 #include "LogHandler.h"
 
 LogHandler::LogHandler() {
-	// TODO Auto-generated constructor stub
+
+	;
 
 }
 
@@ -21,7 +22,7 @@ void LogHandler::initLogger()
 
 	log.open("log.txt",ios::out);
 
-    char dateStr [9];
+	char dateStr [9];
     char timeStr [9];
 	_strdate( dateStr);
 	_strtime( timeStr );

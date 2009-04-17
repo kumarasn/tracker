@@ -29,6 +29,7 @@
 
 #include <windows.h>
 
+#include "iostream.h"
 
 InitTracker::InitTracker(CoordsSaver* coordSaver, SystemInfo* sysInfo):InitializerCreator() {
 	this->coordSaver = coordSaver;
@@ -41,6 +42,7 @@ InitTracker::~InitTracker() {
 
 int InitTracker::start()
 {
+
 	LogHandler               *logger = new LogHandler();
 
 	ConfigHandler            *config = new ConfigHandler(logger);
@@ -66,6 +68,7 @@ int InitTracker::start()
 
 	}
 
+
 	if ( !cam->initCamDevice() ){
 
 		logger->closeLogger();
@@ -73,7 +76,6 @@ int InitTracker::start()
 		return -1;
 
 	}
-
 
 	net->setnetFile(config->getTrackerNetFile());
 

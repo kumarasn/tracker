@@ -1,3 +1,8 @@
+#include "../../CommonProject/InterfaceWorker/InitializerCreator.h"
+#include "../../CommonProject/src/CoordsSaver.h"
+#include "../../CommonProject/src/SystemInfo.h"
+
+
 
 /*
  * InitTracker.h
@@ -8,15 +13,6 @@
 
 #ifndef INITTRACKER_H_
 #define INITTRACKER_H_
-
-#include "../../CommonProject/src/CoordsSaver.h"
-#include "../../CommonProject/src/SystemInfo.h"
-#include "../../CommonProject/src/CoordsSaver.cpp"
-#include "../../CommonProject/src/SystemInfo.cpp"
-#include "../../CommonProject/InterfaceWorker/InitializerCreator.h"
-#include "../../CommonProject/InterfaceWorker/InitializerCreator.cpp"
-#include "../../CommonProject/src/Buffer_PC.h"
-#include "../../CommonProject/src/Buffer_PC.cpp"
 
 class InitTracker:public InitializerCreator {
 public:
