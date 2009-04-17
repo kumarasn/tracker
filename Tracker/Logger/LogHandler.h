@@ -12,9 +12,10 @@
 
 #include "iostream.h"
 
- #include <time.h>
+#include <time.h>
 
-#include <fstream>
+#include <fstream.h>
+
 
 using namespace std;
 

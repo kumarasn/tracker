@@ -6,7 +6,7 @@
  */
 
 #include "CamHandler.h"
-
+#include "iostream.h"
 
 
 CamHandler::CamHandler(LogHandler* logger) {
@@ -38,6 +38,8 @@ bool CamHandler::initCamDevice()
 	componentName = "CamHandler";
 
 	capture = cvCaptureFromCAM( CV_CAP_ANY );
+
+
 
 	 if( !capture ) {
 
